@@ -67,9 +67,11 @@ section.pricing > .pricing-container {
 }
 
 section.pricing .pricing-container .pricing {
+  background-color: #007bff;
+  color: #fff;
   flex-basis: calc(25% - 20px);
   padding: 20px;
-  border: 1px solid #ccc;
+  border: 1px solid rgb(3, 3, 3);
   border-radius: 10px;
   box-sizing: border-box;
 }
