@@ -1,0 +1,40 @@
+section {
+    text-align: center;
+    padding: 50px 20px;
+  }
+  
+  section > .card-container {
+    display: flex;
+    max-width: 1500px;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  section .card-container .card {
+    flex-wrap: rowrap;
+    /* flex-basis: calc(33.333% - 20px); */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+  }
+  
+  /* Media Queries */
+  
+  /* Pour les écrans jusqu'à 900px de large */
+  @media (max-width: 900px) {
+    section .card-container .card {
+        flex-basis: calc(50% - 20px); /* Ajustez le 20px si votre gap est différent */
+    }
+  }
+  
+  /* Pour les écrans jusqu'à 600px de large */
+  @media (max-width: 600px) {
+    section .card-container {
+      flex-direction: column;
+    }
+    section .card-container .card {
+        flex-basis: 100%;
+    }
+  }
+  
